@@ -1,0 +1,151 @@
+/* Scroll Style */
+::-webkit-scrollbar {
+    background-color: #2e2e2e91;
+    width: 10px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    /* background: #252525; */
+    background: -webkit-linear-gradient(45deg, #2444FF, #24C4FF);
+    border-radius: 5px;
+    animation: changeColor 6s linear infinite;
+}
+
+*,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--back-color);
+    color: var(--ligth-color);
+}
+
+/* HeroSection */
+.large-header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+#large-header {
+    /* background-image: url("../img/bg/bg-animation.gif"); */
+    background-color: #000000;
+    background-attachment: fixed;
+    width: 100vw;
+
+}
+
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.demo-1 .main-title {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+    font-weight: 200;
+}
+
+.logo {
+    width: 8rem;
+    margin-left: -30px;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.title {
+    font-size: 1.3rem;
+    text-justify: distribute;
+}
+
+.sub-title {
+    font-size: 1rem;
+}
+
+/* Objects */
+.btn {
+    padding: 0.5rem;
+    background-color: #000000;
+    color: var(--ligth-color);
+    border: solid 1px transparent;
+    border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth) );
+    border-image-slice: 1;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover{
+    border-image: linear-gradient(90deg, #fff, #fff, #fff );
+    background-color: #2444FF;
+    box-shadow: #24C4FF 0px 0px 15px;
+    border-image-slice: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* (mobile) */
+@media screen and (max-width: 600px) {
+    .hide-mobile {
+        display: none;
+        overflow: hidden;
+    }
+}
+
+/* (desktop) */
+@media screen and (min-width: 601px) {
+    .hide-desktop {
+        display: none;
+        overflow: hidden;
+    }
+}

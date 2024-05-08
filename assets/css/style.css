@@ -1,0 +1,134 @@
+:root {
+    /* Cores */
+    --primary: #040053;
+    --blue: #2444FF;
+    --blue-ligth: #24C4FF;
+
+    --back-color: #000;
+    --ligth-color: #ECECEC;
+    --middle-color: #D9D9D9;
+    --ligth-color: #FFFFFF;
+
+    /* Size */
+    --type-zero: 1rem;
+    --type-one: 1.5rem;
+    --type-two: 2rem;
+    --type-three: 3rem;
+};
+
+body, 
+main {
+    background-color: var(--back-color);
+    color: var(--ligth-color);
+}
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 3px 8px;
+    color:var(--ligth-color);
+    background-color: #0000000e;
+    backdrop-filter: blur(5px);
+    padding: var(--type-zero);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header nav ul li {    
+    margin: 0 0.5rem;
+}
+
+header nav ul li a { 
+    font-size: 0.8rem;
+}
+
+header section {
+    margin: 0.3rem 2rem;
+}
+
+a {
+    color: var(--ligth-color);
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+a:hover,
+a:active,
+a:focus {
+    /* text-decoration: underline #f9f1e9 2px; */
+    /* background: -webkit-linear-gradient(45deg, #2444FF, #24C4FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    animation: changeColor 6s linear infinite;
+}
+
+.txt-grad {
+    background: -webkit-linear-gradient(45deg, var(--blue), var(--blue-ligth));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .1s ease-in-out;
+}
+
+.txt-grad-animated {
+    /* background: -webkit-linear-gradient(45deg, #2444FF, #24C4FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    animation: changeColor 6s linear infinite;
+    transition: all .1s ease-in-out;
+}
+
+/*  */
+@keyframes changeColor {
+
+    0%,
+    100% {
+        color: #2444FF;
+    }
+
+    33% {
+        color: #24C4FF;
+    }
+
+    66% {
+        color: #040053;
+    }
+}
+
+/* SERVICE */
+.service-card{
+    width: 100%;
+    height: 30rem;
+    padding: var(--type-two);
+}
+
+.service-desc{
+    width: 40%;
+    height: 45%;
+    padding: 0 6rem;
+}
+
+
+.service-desc h2,
+.service-desc h3,
+.service-desc p{
+    margin: 1rem 0;
+    text-justify: distribute;
+    text-align: justify;
+}
+
+.service-img{
+    width: 50%;
+}
+
+.service-img img{
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+/* 
+.service-img img:first-child {
+    opacity: 1;
+} */

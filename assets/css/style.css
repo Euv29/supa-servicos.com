@@ -118,13 +118,13 @@ a:focus {
 .amimatedRigth {
     animation: descAppearRigth 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover -10% cover 50%;
+    animation-range: cover -40% cover 50%;
 }
 
 .amimatedleft {
     animation: descAppearLeft 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover -10% cover 50%;
+    animation-range: cover -40% cover 50%;
 }
 
 @keyframes descAppearLeft {

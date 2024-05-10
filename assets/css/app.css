@@ -57,7 +57,7 @@ body {
 
 .demo-1 .main-title {
     text-transform: uppercase;
-    font-size: 4.2em;
+    font-size: 5em;
     letter-spacing: 0.1em;
 }
 
@@ -66,8 +66,8 @@ body {
 }
 
 .logo {
+    margin-left: 10px;
     width: 8rem;
-    margin-left: -30px;
 }
 
 .icon {
@@ -89,22 +89,49 @@ body {
     padding: 0.5rem;
     background-color: #000000;
     color: var(--ligth-color);
-    border: solid 1px transparent;
-    border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth) );
+    border: solid 2px transparent;
+    border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
     border-image-slice: 1;
     cursor: pointer;
+    animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out;
+
 }
 
-.btn:hover{
-    border-image: linear-gradient(90deg, #fff, #fff, #fff );
+@keyframes borderAnimated {
+
+    0%,
+    100% {
+        border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+    }
+
+    20% {
+        border-image: linear-gradient(180deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+    }
+
+    40% {
+        border-image: linear-gradient(270deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+    }
+
+    80% {
+        border-image: linear-gradient(360deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+    }
+}
+
+.btn:hover {
+    border-image: linear-gradient(90deg, #fff, #fff, #fff);
     background-color: #2444FF;
     box-shadow: #24C4FF 0px 0px 15px;
+    animation: none;
     border-image-slice: 1;
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .flex {
@@ -140,6 +167,19 @@ body {
         display: none;
         overflow: hidden;
     }
+
+    .service-card {
+        width: 100%;
+        height: 18rem;
+        padding: var(--type-two);
+    }
+
+    .service-desc {
+        width: 120%;
+        height: 45%;
+        padding: 0 3.5rem;
+        padding-left: 0rem;
+    }
 }
 
 /* (desktop) */
@@ -147,5 +187,11 @@ body {
     .hide-desktop {
         display: none;
         overflow: hidden;
+    }
+
+    .service-desc {
+        width: 40%;
+        height: 45%;
+        padding: 0 7rem;
     }
 }

@@ -25,9 +25,9 @@ main {
 }
 
 header {
-    box-shadow: rgba(0, 0, 0, 0.01) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.100) 0px 3px 8px;
     color: var(--ligth-color);
-    background-color: #0000000e;
+    background-color: hsla(0, 0%, 0%, 0.300);
     backdrop-filter: blur(5px);
     padding: 0.5rem;
     position: fixed;
@@ -47,7 +47,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 header section {
@@ -229,17 +229,37 @@ a:focus {
 }
 
 .comment-area {
-    width: 100%;
+    overflow: hidden;
     padding: 1rem 0;
-
     animation: scaleup 1ms ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 50%;
+    display: flex;
+    white-space: nowrap;
+}
+
+.slide-animete{
+    animation: slide 30s linear infinite;
+}
+
+.comment-area1 .comment-card,
+.comment-area2 .comment-card{
+    white-space: wrap;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
 }
 
 .comment-area2{
     margin-top: 2rem;
-    margin-left: 10rem;
+    padding-left: 17%;
 }
 
 @keyframes scaleup {
@@ -262,10 +282,12 @@ a:focus {
 .comment-card {
     border: 1px solid #ECECEC;
     justify-content: space-between;
+    min-width: 300px;
     width: 300px;
     height: 120px;
     border-radius: 1rem;
     padding: 1rem;
+    margin-right: 20rem;
 }
 
 .comment-card .card-head div {

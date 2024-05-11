@@ -26,6 +26,18 @@ body {
     color: var(--ligth-color);
 }
 
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
 /* HeroSection */
 .large-header {
     position: relative;
@@ -40,7 +52,6 @@ body {
     background-color: #000000;
     background-attachment: fixed;
     width: 100vw;
-
 }
 
 .main-title {
@@ -157,7 +168,6 @@ body {
 }
 
 .align-center {
-    justify-content: center;
     align-items: center;
 }
 
@@ -195,3 +205,4 @@ body {
         padding: 0 7rem;
     }
 }
+

@@ -26,16 +26,18 @@ body {
     color: var(--ligth-color);
 }
 
-h1{
+h1 {
     font-size: 1.5rem;
 }
 
-h2{
+h2 {
     font-size: 1rem;
 }
 
-p{
-    font-size: 0.9rem;
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-right: 2.5rem;
 }
 
 /* HeroSection */
@@ -178,17 +180,48 @@ p{
         overflow: hidden;
     }
 
+    .mobileposition {
+        flex-direction: column;
+    }
+
+    .mobileposition-reverse {
+        flex-direction: column-reverse;
+    }
+
     .service-card {
+        overflow: hidden;
+        margin: 0px 0px -10px 0px;
+        padding: 0px;
         width: 100%;
-        height: 18rem;
-        padding: var(--type-two);
+        height: 100vh;
+        justify-content: space-evenly;
+        padding: 0px 1rem; 
     }
 
     .service-desc {
-        width: 120%;
-        height: 45%;
-        padding: 0 3.5rem;
-        padding-left: 0rem;
+        justify-content: center;
+        width: 100%;
+        height: 40%;
+        padding: 0 0 0 1rem;
+    }
+
+    .service-img {
+        position: relative;
+        padding: 0;
+        width: 100%;
+        height: 35%;
+    }
+
+    .service-desc h1,
+    .service-desc h2,
+    .service-desc h3,
+    .service-desc p {
+        margin: 8px 0;
+    }
+
+    /*  */
+    .partnerslogo a{
+        margin: 0 20px;
     }
 }
 
@@ -205,4 +238,3 @@ p{
         padding: 0 7rem;
     }
 }
-

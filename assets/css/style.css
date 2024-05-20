@@ -7,7 +7,7 @@
     --back-color: #000;
     --ligth-color: #ECECEC;
     --middle-color: #D9D9D9;
-    --ligth-color: #FFFFFF;
+    --ligth-color: #ececec;
 
     /* Size */
     --type-zero: 1rem;
@@ -105,14 +105,7 @@ a:focus {
 /* SERVICE */
 .service-card {
     width: 100%;
-    height: 30rem;
-    padding: 1rem 2rem 1rem 0;
-}
-
-.service-desc {
-    width: 40%;
-    height: 45%;
-    padding: 0 7rem;
+    padding: 5rem 2rem;
 }
 
 .amimatedRigth {
@@ -160,13 +153,14 @@ a:focus {
     }
 }
 
+.service-desc h1,
 .service-desc h2,
 .service-desc h3,
 .service-desc p {
-    margin: 1rem 0;
+    margin: 16px 0;
+    padding-right: 3rem;
     text-justify: distribute;
     text-align: justify;
-    width: 100%;
 }
 
 .service-img {
@@ -228,9 +222,11 @@ a:focus {
     }
 }
 
+
+/*  */
 .comment-area {
     overflow: hidden;
-    padding: 1rem 0;
+    padding: 3rem 0;
     animation: scaleup 1ms ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 50%;
@@ -284,7 +280,7 @@ a:focus {
     justify-content: space-between;
     min-width: 300px;
     width: 300px;
-    height: 120px;
+    height: 100px;
     border-radius: 1rem;
     padding: 1rem;
     margin-right: 20rem;
@@ -297,3 +293,38 @@ a:focus {
 .comment-star{
     margin-left: 80%;
 }
+/*  */
+#sobre{
+    padding: 2rem 0;
+    background-color: red;
+    margin: 4rem 0;
+    width: 100%;
+    background-size: cover;
+}
+/*  */
+
+
+.logos{ 
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap; 
+}
+
+.logos:hover .slide-animete-logo{
+    animation-play-state: paused;
+}
+
+.slide-animete-logo{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.partnerslogo a{
+    margin: 0 40px;
+}
+
+.partnerslogo a img{
+    height: 40px;
+}
+

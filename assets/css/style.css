@@ -227,15 +227,24 @@ a:focus {
     border: 1px solid #ECECEC;
     justify-content: space-between;
     min-width: 300px;
-    width: 300px;
-    height: 100px;
+    width: 35rem;
+    min-height: 10rem;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin-right: 20rem;
 }
 
-.comment-card .card-head div {
-    margin-right: 0.5rem;
+.comment-card .card-head {
+    align-items: center;
+}
+
+.comment-card .card-head div{
+    margin-right: 1rem;
+}
+
+.comment-card .card-body p{
+    margin-right: 1rem;
+    padding: 0 0 0 2rem;
 }
 
 .comment-star{

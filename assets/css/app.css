@@ -97,7 +97,7 @@ p {
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     background-color: #000000;
     color: var(--ligth-color);
     border: solid 2px transparent;
@@ -204,6 +204,14 @@ p {
         animation: none; 
         animation-timeline: view();
         animation-range: cover 0% cover 0%;
+    }
+
+    /* About Us */
+    .sobre p{
+        width: 80%;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.7rem;
     }
 }
 

@@ -315,3 +315,17 @@ a:focus {
     height: 40px;
 }
 
+/* About Us */
+.sobre{
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sobre p{
+    width: 70%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+}

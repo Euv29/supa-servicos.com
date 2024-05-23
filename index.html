@@ -1,20 +1,553 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Fundada em 01 de fevereiro de 2020, a Supa Serviços é uma empresa criada para trazer soluções e serviços capazes de desbloquear novas oportunidades de crescimento, unindo os mundos digital e físico.">
 
+    <title>Supa Serivoços</title>
 
-  <!-- Style -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/app.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="" type="image/">
+
+    <!-- font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> -->
+
+    <!-- Icons -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/flaticon.css"> -->
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
 </head>
+
 <body>
-  
-  <comentario-comp></comentario-comp>
-  
-  <script src="componentes/comentario.js"></script>
+    <header class="flex space-between">
+        <section class="logo-content">
+            <a href="index.html" class="flex align-center logo-area">
+                <img width="120px" class="logo" src="assets/img/logo.webp" alt="logo" srcset="">
+            </a>
+        </section>
+        <section class="hide-mobile">
+            <nav class="navbar">
+                <ul class="flex-row bold">
+                    <li><a class="page-scroll" href="#home">INÍCIO</a></li>
+                    <li><a class="page-scroll" href="#service">SERVIÇOS</a></li>
+                    <li><a class="page-scroll" href="#sobre">SOBRE NÓS</a></li>
+                    <!-- <li><a class="page-scroll" href="#portifolio">Portfólio</a></li> -->
+                    <li><a class="page-scroll" href="#contactos">CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="hide-desktop">
+            <ul class="navbar">
+                <li><a href="index.html" class="flex-row">
+                        <img height="30px" width="30px" class="icon" src="assets/img/icons/menu.webp" alt="">
+                    </a></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <!-- HeroSection -->
+        <section id="home" style="width: 80%; height: 100vh;">
+            <section id="large-header" class="large-header ">
+                <canvas id="demo-canvas"></canvas>
+                <h1 class="main-title welcome">Supa <span class="thin txt-grad-animated">Serviços</span></h1>
+            </section>
+        </section>
+
+        <!-- AboutUs -->
+        <section class="title-section flex-col">
+            <section class=" flex-col">
+                <h2 class="title txt">
+                    Sobre <span class="thin txt-grad">Nós</span>
+                </h2>
+            </section>
+            <p style="text-align: center; padding: 1rem;">
+                Trabalhando nas áreas de Tecnologia, Comunicação, Publicidade, Relações Públicas, Finanças e
+                Gestão.
+            </p>
+        </section>
+
+        <!-- Services -->
+        <section id="service">
+            <!-- COMUNICAÇÃO E RELAÇÕES PÚBLICAS -->
+            <section class="service-card flex mobileposition-reverse">
+                <section class="service-desc amimatedleft flex-col justify-center">
+                    <h1 class="title txt-grad">COMUNICAÇÃO E RELAÇÕES PÚBLICAS</h1>
+                    <h2 class="sub-title">Gestão de carreiras | Gestão de eventos | Imprensa | Distribuição audiovisual
+                    </h2>
+                    <p>
+                        Maximize seu potencial com nossos serviços abrangentes em gestão de carreiras, eventos, imprensa
+                        e distribuição audiovisual. Entre em contato hoje mesmo para começar a construir o futuro que
+                        você merece.
+                    </p>
+                    <a href="" style="width: 100px;" class="marcar btn">Marcar</a>
+                </section>
+                <section class="service-img amimatedRigth service-img1 flex">
+                    <img class="img1" width="100%" src="assets/img/services/c1.webp" alt="">
+                    <img class="img2" width="100%" src="assets/img/services/c2.webp" alt="">
+                </section>
+            </section>
+
+            <!-- MARCKETING E PUBLICIDADE -->
+            <section class="service-card flex mobileposition">
+                <section class="service-img amimatedleft  service-img1 flex">
+                    <img class="img1" width="100%" src="assets/img/services/c1.webp" alt="">
+                    <img class="img2" width="100%" src="assets/img/services/c2.webp" alt="">
+                </section>
+                <section class="service-desc amimatedRigth flex-col justify-center">
+                    <h1 class="title txt-grad">MARCKETING E PUBLICIDADE</h1>
+                    <h2 class="sub-title">Marketing de influência | Gestão de redes sociais | SEO | Lançamentos</h2>
+                    <p>
+                        Acelere seu sucesso com nossa abordagem especializada em marketing de influência, gestão de
+                        redes sociais, SEO e lançamentos estratégicos. Contate-nos agora para dar o próximo passo rumo à
+                        visibilidade e crescimento.
+                    </p>
+                    <a href="" style="width: 100px;" class="marcar btn">Marcar</a>
+                </section>
+            </section>
+
+            <!-- Comentarios / provas -->
+            <section class="comment-area">
+
+                <section>
+                    <section class="slide-animete comment-area1 flex-row">
+
+                        <!-- 1 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>Okenio M</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Recomendo, seviços de qualidade.
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                        <!-- 2 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>Carla Prata</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Eu confio na SUPA SERVIÇOS!
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                        <!-- 3 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>A'Aires</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Busca qualidade? é só na #supaservicos!
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                    </section>
+
+                    <section class="slide-animete comment-area2 flex-row">
+
+                        <!-- 1 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>NGA fs</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Yo SUPA, obrigado pelo bom trabalho! Recomendo.
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                        <!-- 2 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>Okenio M</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Recomendo, seviços de qualidade.
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                        <!-- 3 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2></h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Busca qualidade? é só na #supaservicos!
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                    </section>
+                </section>
+
+                <!-- To repeat -->
+                <section>
+                    <section class="slide-animete comment-area1 flex-row">
+
+                        <!-- 1 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>Okenio M</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Recomendo, seviços de qualidade.
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                        <!-- 2 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>Carla Prata</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Eu confio na SUPA SERVIÇOS!
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                        <!-- 3 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>A'Aires</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Busca qualidade? é só na #supaservicos!
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                    </section>
+
+                    <section class="slide-animete comment-area2 flex-row">
+
+                        <!-- 1 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>NGA fs</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Yo SUPA, obrigado pelo bom trabalho! Recomendo.
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                        <!-- 2 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>Okenio M</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Recomendo, seviços de qualidade.
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                        <!-- 3 -->
+                        <section class="comment-card flex-col">
+                            <section class="card-head flex-row align-center">
+                                <div>
+                                    <img src="assets/img/icons/Ellipse 5.svg" alt="">
+                                </div>
+                                <h2>Xofela</h2>
+                            </section>
+                            <section>
+                                <p>
+                                    Busca qualidade? é só na #supaservicos!
+                                </p>
+                            </section>
+                            <div class="comment-star flex-row">
+                                <img width="60" height="10" src="assets/img/icons/Frame 7.png" alt="">
+                            </div>
+                        </section>
+
+                    </section>
+                </section>
+
+            </section>
+
+            <!-- AUDIOVISUAL & PRODUCTION -->
+            <section class="amimatedleft service-card flex mobileposition-reverse">
+                <section class="service-desc  flex-col justify-center">
+                    <h1 class="title txt-grad">AUDIOVISUAL & PRODUCTION</h1>
+                    <h2 class="sub-title">Design gráfico | Design de produção | Fotografia | Vídeo | Impressão
+                    </h2>
+                    <p>
+                        Transforme sua visão em realidade com nossa equipe especializada em design gráfico,
+                        design de produção, fotografia, vídeo e impressão. Entre em contato hoje mesmo e leve
+                        sua marca
+                        para o próximo nível!
+                    </p>
+                    <a href="" style="width: 100px;" class="marcar btn">Marcar</a>
+                </section>
+                <section class="service-img service-img1 flex">
+                    <img class="img1" width="100%" src="assets/img/services/c1.webp" alt="">
+                    <img class="img2" width="100%" src="assets/img/services/c2.webp" alt="">
+                </section>
+            </section>
+
+
+            <!-- TECNOLOGIA -->
+            <section class="amimatedRigth service-card flex mobileposition">
+                <section class="service-img service-img1 flex">
+                    <img class="img1" width="100%" src="assets/img/services/c1.webp" alt="">
+                    <img class="img2" width="100%" src="assets/img/services/c2.webp" alt="">
+                </section>
+                <section class="service-desc flex-col justify-center">
+                    <h1 class="title txt-grad">TECNOLOGIA</h1>
+                    <h2 class="sub-title">Website | E-Commerce | Landing Pages | APPs</h2>
+                    <p>
+                        Construa sua presença online forte e eficaz com nossos serviços de desenvolvimento de website,
+                        e-commerce, landing pages e apps personalizados. Entre em contato agora para criar uma
+                        experiência digital que cativa e converte!
+                    </p>
+                    <a href="" style="width: 100px;" class="marcar btn">Marcar</a>
+                </section>
+            </section>
+
+            <!-- FINANÇAS-->
+            <section class="amimatedleft service-card flex mobileposition-reverse">
+                <section class="service-desc  flex-col justify-center">
+                    <h1 class="title txt-grad">FINANÇAS</h1>
+                    <h2 class="sub-title">Contabilidade | Fiscalidade | Gestão Financeira
+                    </h2>
+                    <p>
+                        Otimize sua saúde financeira com nossa expertise em contabilidade, fiscalidade e gestão
+                        financeira. Entre em contato hoje mesmo para garantir uma gestão financeira sólida e eficaz para
+                        seu negócio!
+                    </p>
+                    <a href="" style="width: 100px;" class="marcar btn">Marcar</a>
+                </section>
+                <section class="service-img service-img1 flex">
+                    <img class="img1" width="100%" src="assets/img/services/c1.webp" alt="">
+                    <img class="img2" width="100%" src="assets/img/services/c2.webp" alt="">
+                </section>
+            </section>
+
+
+            <!-- FINANÇAS-->
+            <section id="sobre" class="service-card flex mobileposition-reverse">
+                <section class="service-desc  flex-col justify-center">
+                    <h1 class="title txt-grad">SOBRE NÓS</h1>
+                    <h2 class="sub-title">
+                        Supa <span class="thin txt-grad">Serviços</span>
+                    </h2>
+                    <p>
+                        Fundada em 01 de fevereiro de 2020, a Supa Serviços é uma empresa criada para trazer soluções e
+                        serviços capazes de desbloquear novas oportunidades de crescimento, unindo os mundos digital e
+                        físico.
+                    </p>
+                    <p>
+                        Desenvolvendo produtos e serviços com criatividade sem limites, construindo e se engajando em
+                        experiências que inspiram momentos de alegria ao longo da jornada do cliente.
+                    </p>
+                    <p>
+                        Trabalhando nas áreas de Tecnologia, Comunicação, Publicidade, Relações Públicas, Finanças e
+                        Gestão.
+                    </p>
+                    <!-- <a href="" style="width: 100px;" class="marcar btn">Marcar</a> -->
+                </section>
+                <section class="service-img service-img1 flex">
+                    <img class="img1" width="100%" src="assets/img/services/c1.webp" alt="">
+                    <img class="img2" width="100%" src="assets/img/services/c2.webp" alt="">
+                </section>
+            </section>
+
+
+            <!-- PARNERS -->
+            <section class="flex-col space-between align-center justify-center">
+                <section class="title-section flex-col justify-center">
+                    <h2 class="title txt">
+                        Confian Na <span class="thin txt-grad">Supa Serviços</span>
+                    </h2>
+                </section>
+                <section class="logos">
+                    <section class="partnerslogo slide-animete-logo justify-center align-center">
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 10.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 12.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 13.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 14.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 15.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 16.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 17.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 18.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 2.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 3.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 4.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 5.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 6.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 7.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 8.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 9.png" alt=""></a>
+                    </section>
+                    <section class="partnerslogo slide-animete-logo justify-center align-center">
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 10.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 12.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 13.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 14.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 15.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 16.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 17.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 18.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 2.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 3.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 4.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 5.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 6.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 7.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 8.png" alt=""></a>
+                        <a href=""><img height="40px" src="assets/img/partnerslogo/logos site 9.png" alt=""></a>
+                    </section>
+                </section>
+            </section>
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
+<script src="assets/js/app.js"></script>
+
+<!-- Smooth Scroll -->
+<script src="assets/js/smoothScroll/jquery.js"></script>
+<script src="assets/js/smoothScroll/jquery.parallax.js"></script>
+<script src="assets/js/smoothScroll/owl.carousel.min.js"></script>
+<script src="assets/js/smoothScroll/custom.js"></script>
+
+<!-- HeroSection Script -->
+<script src="assets/js/background/jquery-3.6.0.min.js"></script>
+<script src="assets/js/background/EasePack.min.js"></script>
+<script src="assets/js/background/rAF.js"></script>
+<script src="assets/js/background/TweenLite.min.js"></script>
+<script src="assets/js/background/script.js"></script>
+
+
+<!-- Typing Animation -->
+<script>
+    $(document).ready(function () {
+        var textElements = ["Building a new way together.", "Construindo um novo caminho juntos."];
+        var welcomeText = document.querySelector('.welcome');
+        var currentIndex = 0;
+        var currentText = '';
+        var typingSpeed = 80; // Velocidade da digitação (em milissegundos)
+
+        function typeText() {
+            if (currentText.length < textElements[currentIndex].length) {
+                currentText = textElements[currentIndex].slice(0, currentText.length + 1);
+                welcomeText.textContent = currentText;
+                setTimeout(typeText, typingSpeed);
+            } else {
+                // Aguarde um tempo para exibir o próximo texto
+                setTimeout(eraseText, 1000);
+            }
+        }
+
+        function eraseText() {
+            if (currentText.length > 0) {
+                currentText = currentText.slice(0, currentText.length - 1);
+                welcomeText.textContent = currentText;
+                setTimeout(eraseText, typingSpeed);
+            } else {
+                // Aguarde um tempo antes de exibir o próximo texto
+                currentIndex = (currentIndex + 1) % textElements.length;
+                setTimeout(typeText, 1000);
+            }
+        }
+
+        typeText(); // Inicie a digitação
+    });
+</script>
+
 </html>

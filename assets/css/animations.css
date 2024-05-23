@@ -1,0 +1,113 @@
+@keyframes borderAnimated {
+
+    0%,
+    100% {
+        border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+    }
+
+    20% {
+        border-image: linear-gradient(180deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+    }
+
+    40% {
+        border-image: linear-gradient(270deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+    }
+
+    80% {
+        border-image: linear-gradient(360deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+    }
+}
+
+/* .txt-grad-animated  */
+@keyframes changeColor {
+
+    0%,
+    100% {
+        color: #2444FF;
+    }
+
+    33% {
+        color: #24C4FF;
+    }
+
+    66% {
+        color: #040053;
+    }
+}
+
+/* SERVICE */
+@keyframes descAppearLeft {
+    0% {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes descAppearRigth {
+    0% {
+        opacity: 0;
+        translate: 100vw 0;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    100% {
+        
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes firstchange {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 0;
+    }
+}
+
+@keyframes secondchange {
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75%{
+        opacity: 1;
+    }
+}
+

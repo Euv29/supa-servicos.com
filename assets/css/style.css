@@ -16,8 +16,6 @@
     --type-three: 3rem;
 }
 
-;
-
 body,
 main {
     background-color: var(--back-color);
@@ -25,14 +23,20 @@ main {
 }
 
 header {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: hsla(0, 0%, 0%, 0.300);
     box-shadow: rgba(0, 0, 0, 0.100) 0px 3px 8px;
     color: var(--ligth-color);
-    background-color: hsla(0, 0%, 0%, 0.300);
     backdrop-filter: blur(5px);
-    padding: 0.5rem;
     position: fixed;
     width: 100%;
     z-index: 1;
+}
+
+header section{
+    margin: 2rem;
 }
 
 ul {
@@ -44,14 +48,7 @@ ul {
 
 header nav ul li {
     margin: 0 0.5rem;
-}
-
-header nav ul li a {
-    font-size: 0.8rem;
-}
-
-header section {
-    margin: 0.3rem 2rem;
+    font-size: 1.5rem;
 }
 
 a {
@@ -85,27 +82,40 @@ a:focus {
     transition: all .1s ease-in-out;
 }
 
-/*  */
-@keyframes changeColor {
-
-    0%,
-    100% {
-        color: #2444FF;
-    }
-
-    33% {
-        color: #24C4FF;
-    }
-
-    66% {
-        color: #040053;
-    }
+.title-section{
+    width: 100%;
+    padding: 3rem 0;
+    justify-content: center;
+    align-items: center;
 }
 
 /* SERVICE */
 .service-card {
     width: 100%;
-    padding: 5rem 2rem;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.service-img {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    width: 40%;
+}
+
+.service-img img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-desc {
+    padding: 0 3rem;
+    width: 40%;
+    justify-content: center;
 }
 
 .amimatedRigth {
@@ -153,26 +163,6 @@ a:focus {
     }
 }
 
-.service-desc h1,
-.service-desc h2,
-.service-desc h3,
-.service-desc p {
-    margin: 16px 0;
-    padding-right: 3rem;
-    text-justify: distribute;
-    text-align: justify;
-}
-
-.service-img {
-    position: relative;
-    width: 50%;
-}
-
-.service-img img {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-}
 
 .service-img .img1 {
     animation: firstchange 8s ease-in-out infinite;
@@ -221,58 +211,15 @@ a:focus {
         opacity: 1;
     }
 }
-
-
-/*  */
+/* COMMENTARIOS */
 .comment-area {
     overflow: hidden;
-    padding: 3rem 0;
+    padding: 4rem 0;
     animation: scaleup 1ms ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 50%;
     display: flex;
     white-space: nowrap;
-}
-
-.slide-animete{
-    animation: slide 30s linear infinite;
-}
-
-.comment-area1 .comment-card,
-.comment-area2 .comment-card{
-    white-space: wrap;
-}
-
-@keyframes slide {
-    from{
-        transform: translateX(0);
-    }
-
-    to{
-        transform: translateX(-100%);
-    }
-}
-
-.comment-area2{
-    margin-top: 2rem;
-    padding-left: 17%;
-}
-
-@keyframes scaleup {
-    0% {
-        opacity: 0;
-        /* translate: 0 100vw; */
-        scale: 0 0%;
-    }
-
-    60%{
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        translate: 1 100%;
-    }
 }
 
 .comment-card {
@@ -293,21 +240,54 @@ a:focus {
 .comment-star{
     margin-left: 80%;
 }
-/*  */
-#sobre{
-    padding: 2rem 0;
-    background-color: red;
-    margin: 4rem 0;
-    width: 100%;
-    background-size: cover;
+
+.slide-animete{
+    animation: slide 30s linear infinite;
 }
-/*  */
+
+.comment-area1 .comment-card,
+.comment-area2 .comment-card{
+    white-space: wrap;
+}
 
 
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.comment-area2{
+    margin-top: 2rem;
+    padding-left: 17%;
+}
+
+@keyframes scaleup {
+    0% {
+        opacity: 0;
+        scale: 0 0%;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 1 100%;
+    }
+} 
+
+
+/* LOGOTIPOS DE PARCEIROS */
 .logos{ 
     width: 100%;
     overflow: hidden;
-    padding: 60px 0;
+    padding: 40px 0;
     white-space: nowrap; 
 }
 
@@ -321,7 +301,7 @@ a:focus {
 }
 
 .partnerslogo a{
-    margin: 0 40px;
+    margin: 0 3rem;
 }
 
 .partnerslogo a img{

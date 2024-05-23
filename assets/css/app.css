@@ -1,6 +1,6 @@
 /* Scroll Style */
 ::-webkit-scrollbar {
-    background-color: #2e2e2e91;
+    background-color: transparent;
     width: 10px;
     height: 6px;
 }
@@ -13,31 +13,37 @@
     animation: changeColor 6s linear infinite;
 }
 
+html {
+    font-size: 60.5%;
+}
+
 *,
 html {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
 body {
     overflow-x: hidden;
+    font-size: 1.4rem;
     background-color: var(--back-color);
     color: var(--ligth-color);
 }
 
-h1 {
-    font-size: 1.5rem;
-}
-
-h2 {
-    font-size: 1rem;
+h2,
+h3,
+h4,
+p {
+    line-height: 1.5em;
+    text-justify: distribute;
+    text-align: justify;
 }
 
 p {
-    font-size: 1rem;
-    font-weight: 400;
-    padding-right: 2.5rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
 }
 
 /* HeroSection */
@@ -57,6 +63,7 @@ p {
 }
 
 .main-title {
+    font-size: 2rem;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -70,35 +77,18 @@ p {
 
 .demo-1 .main-title {
     text-transform: uppercase;
-    font-size: 5em;
-    letter-spacing: 0.1em;
 }
 
 .main-title .thin {
     font-weight: 200;
 }
 
-.logo {
-    margin-left: 10px;
-    width: 8rem;
-}
-
-.icon {
-    height: 30px;
-    width: 30px;
-}
-
-.title {
-    font-size: 1.3rem;
-    text-justify: distribute;
-}
-
-.sub-title {
-    font-size: 1rem;
-}
-
 /* Objects */
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
     padding: 0.5rem;
     background-color: #000000;
     color: var(--ligth-color);
@@ -108,31 +98,6 @@ p {
     cursor: pointer;
     animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out;
-
-}
-
-@keyframes borderAnimated {
-
-    0%,
-    100% {
-        border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
-        border-image-slice: 1;
-    }
-
-    20% {
-        border-image: linear-gradient(180deg, var(--primary), var(--blue), var(--blue-ligth));
-        border-image-slice: 1;
-    }
-
-    40% {
-        border-image: linear-gradient(270deg, var(--primary), var(--blue), var(--blue-ligth));
-        border-image-slice: 1;
-    }
-
-    80% {
-        border-image: linear-gradient(360deg, var(--primary), var(--blue), var(--blue-ligth));
-        border-image-slice: 1;
-    }
 }
 
 .btn:hover {
@@ -141,10 +106,6 @@ p {
     box-shadow: #24C4FF 0px 0px 15px;
     animation: none;
     border-image-slice: 1;
-}
-
-.bold {
-    font-weight: bolder;
 }
 
 .flex {
@@ -161,18 +122,6 @@ p {
     flex-direction: column;
 }
 
-.space-between {
-    justify-content: space-between;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.align-center {
-    align-items: center;
-}
-
 /* (mobile) */
 @media screen and (max-width: 600px) {
     .hide-mobile {
@@ -180,48 +129,48 @@ p {
         overflow: hidden;
     }
 
-    .mobileposition {
-        flex-direction: column;
+    .service-card {
+        /* background-color: #2444FF; */
+        width: 100%;
+        min-height: 650px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-img {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .service-img img {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-desc {
+        padding: 0 1rem;
+        width: 90%;
+        height: 50%;
+        justify-content: center;
+    }
+
+    .service-desc h1 {
+        margin-top: 11rem;
     }
 
     .mobileposition-reverse {
         flex-direction: column-reverse;
     }
 
-    .service-card {
-        overflow: hidden;
-        margin: 0px 0px -10px 0px;
-        padding: 0px;
-        width: 100%;
-        height: 100vh;
-        justify-content: space-evenly;
-        padding: 0px 1rem; 
-    }
-
-    .service-desc {
-        justify-content: center;
-        width: 100%;
-        height: 40%;
-        padding: 0 0 0 1rem;
-    }
-
-    .service-img {
-        position: relative;
-        padding: 0;
-        width: 100%;
-        height: 35%;
-    }
-
-    .service-desc h1,
-    .service-desc h2,
-    .service-desc h3,
-    .service-desc p {
-        margin: 8px 0;
-    }
-
-    /*  */
-    .partnerslogo a{
-        margin: 0 20px;
+    .mobileposition {
+        flex-direction: column ;
     }
 }
 
@@ -230,11 +179,5 @@ p {
     .hide-desktop {
         display: none;
         overflow: hidden;
-    }
-
-    .service-desc {
-        width: 40%;
-        height: 45%;
-        padding: 0 7rem;
     }
 }

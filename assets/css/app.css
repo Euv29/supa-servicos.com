@@ -14,7 +14,7 @@
 }
 
 html {
-    font-size: 60.5%;
+    font-size: 60%;
 }
 
 *,
@@ -41,8 +41,16 @@ p {
     text-align: justify;
 }
 
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
 p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 1rem 0;
 }
 
@@ -129,10 +137,15 @@ p {
         overflow: hidden;
     }
 
+    html {
+        font-size: 50%;
+    }
+
+    /*  */
     .service-card {
         /* background-color: #2444FF; */
         width: 100%;
-        min-height: 650px;
+        min-height: 70rem;
         justify-content: center;
         align-items: center;
     }
@@ -141,28 +154,36 @@ p {
         position: relative;
         justify-content: center;
         align-items: center;
-        margin: 1rem 0;
+        margin: 2rem 0;
         width: 100%;
         height: 50%;
     }
 
     .service-img img {
-        width: 250px;
-        height: 250px;
+        width: 25rem;
+        height: 25rem;
         position: absolute;
         justify-content: center;
         align-items: center;
     }
 
     .service-desc {
-        padding: 0 1rem;
+        padding: 2rem 1rem 0 1rem ;
         width: 90%;
-        height: 50%;
+        height: 40%;
         justify-content: center;
     }
 
     .service-desc h1 {
-        margin-top: 11rem;
+        margin-top: 12rem;
+    }
+
+    /* .service-desc p,
+    .service-desc h2, */
+    .service-desc a{
+        animation: scaleup 1ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 40%;
     }
 
     .mobileposition-reverse {
@@ -171,6 +192,18 @@ p {
 
     .mobileposition {
         flex-direction: column ;
+    }
+
+    .amimatedRigth {
+        animation: none; 
+        animation-timeline: view();
+        animation-range: cover 0% cover 0%;
+    }
+    
+    .amimatedleft {
+        animation: none; 
+        animation-timeline: view();
+        animation-range: cover 0% cover 0%;
     }
 }
 

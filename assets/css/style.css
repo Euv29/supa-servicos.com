@@ -90,42 +90,46 @@ a:focus {
 }
 
 /* SERVICE */
+#service{
+}
+
 .service-card {
     width: 100%;
-    min-height: 500px;
+    min-height: 45rem;
     justify-content: center;
     align-items: center;
 }
+
 .service-img {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin: 0 1rem;
+    margin: 1rem 0;
     width: 40%;
 }
 
 .service-img img {
-    width: 400px;
-    height: 400px;
+    width: 40rem;
+    height: 40rem;
     position: absolute;
     justify-content: center;
     align-items: center;
 }
 
 .service-desc {
-    padding: 0 3rem;
-    width: 40%;
+    padding: 0 5rem;
+    width: 50%;
     justify-content: center;
 }
 
 .amimatedRigth {
-    animation: descAppearRigth 1ms ease-in-out;
+    animation: descAppearRigth 1ms ease-in-out; 
     animation-timeline: view();
     animation-range: cover -40% cover 40%;
 }
 
 .amimatedleft {
-    animation: descAppearLeft 1ms ease-in-out;
+    animation: descAppearLeft 1ms ease-in-out; 
     animation-timeline: view();
     animation-range: cover -40% cover 40%;
 }
@@ -214,10 +218,7 @@ a:focus {
 /* COMMENTARIOS */
 .comment-area {
     overflow: hidden;
-    padding: 4rem 0;
-    animation: scaleup 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    padding: 5rem 0;
     display: flex;
     white-space: nowrap;
 }
@@ -282,6 +283,12 @@ a:focus {
     }
 } 
 
+/*  */
+.scaleup{
+    animation: scaleup 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 35%;
+}
 
 /* LOGOTIPOS DE PARCEIROS */
 .logos{ 

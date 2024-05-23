@@ -130,6 +130,97 @@ p {
     flex-direction: column;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    /* CONTACTO */
+    input,
+    textarea,
+    .container .btn,
+    .social-midia,
+    .contacto{
+        animation: scaleup 1ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 20%;
+    }
+   
+    .contactos .contactos-form{
+        width: 90%;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .contactos .contactos-form .container-one{
+        width: 30%;
+    }
+    
+    .contactos .contactos-form .container-two{
+        width: 60%;
+    }
+
+    .social-midia{
+        width: 100%;
+        margin: 1rem 0;
+        justify-content: space-evenly;
+    }
+
+    .social-midia a{
+        margin-right: 0;
+    }
+
+    .contacto{
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    /* CONTACTO */
+    input,
+    textarea,
+    .container .btn,
+    .social-midia,
+    .contacto{
+        animation: scaleup 1ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 20%;
+    }
+   
+    .contactos .contactos-form{
+        width: 90%;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .contactos .contactos-form .container-one{
+        width: 30%;
+    }
+    
+    .contactos .contactos-form .container-two{
+        width: 60%;
+    }
+
+    .social-midia{
+        width: 100%;
+        margin: 1rem 0;
+        justify-content: space-evenly;
+    }
+
+    .social-midia a{
+        margin-right: 0;
+    }
+
+    .contacto{
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+}
+
 /* (mobile) */
 @media screen and (max-width: 600px) {
     .hide-mobile {

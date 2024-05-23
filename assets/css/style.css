@@ -296,7 +296,7 @@ a:focus {
 .scaleup{
     animation: scaleup 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 35%;
+    animation-range: cover 0% cover 20%;
 }
 
 /* LOGOTIPOS DE PARCEIROS */
@@ -336,4 +336,81 @@ a:focus {
     margin-top: 2rem;
     text-align: center;
     font-size: 1.7rem;
+}
+
+/* contactos */
+.contactos{
+    margin: 3rem 0;
+    width: 100%;
+    min-height: 5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contactos .contactos-form{
+    width: 70%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.contactos .contactos-form .container-one{
+    width: 30%;
+}
+
+.contactos .contactos-form .container-two{
+    width: 40%;
+}
+
+.contactos .contactos-form .container h1,
+.contactos .contactos-form .container .input-form,
+.contactos-form .container .text-box{
+    margin: 1rem 0;
+}
+
+.inputs{
+    margin: 1rem 0;
+}
+
+input,
+textarea{
+    outline: none;
+    background-color: var(--back-color);
+    color: var(--ligth-color);
+    font-size: 1.6rem;
+    border: solid 0.1rem #ECECEC;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color: #ececec41;
+}
+
+.input-form{
+    width: 100%;
+    height: 3rem;
+    padding: 2rem 1.5rem;
+}
+
+.contactos-form .container .text-box{
+    height: 28rem;
+    padding: 1rem 1.5rem;
+}
+
+.social-midia{
+    width: 10%;
+    margin: 1rem 0;
+    justify-content: space-evenly;
+}
+
+
+.social-midia a{
+    margin-right: 1rem
+}
+
+.contacto a{
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
 }

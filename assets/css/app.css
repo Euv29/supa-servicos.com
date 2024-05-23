@@ -213,6 +213,49 @@ p {
         text-align: center;
         font-size: 1.7rem;
     }
+
+    /* CONTACTO */
+
+    input,
+    textarea,
+    .container .btn,
+    .social-midia,
+    .contacto{
+        animation: scaleup 1ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 20%;
+    }
+   
+    .contactos .contactos-form{
+        width: 90%;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .contactos .contactos-form .container-one{
+        width: 100%;
+    }
+    
+    .contactos .contactos-form .container-two{
+        width: 100%;
+    }
+
+    .social-midia{
+        width: 100%;
+        margin: 1rem 0;
+        justify-content: space-evenly;
+    }
+
+    .social-midia a{
+        margin-right: 0;
+    }
+
+    .contacto{
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
 }
 
 /* (desktop) */

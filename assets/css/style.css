@@ -32,6 +32,7 @@ header {
     backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
+    max-width: 100vw;
     z-index: 1;
 }
 
@@ -39,7 +40,11 @@ header section{
     margin: 2rem;
 }
 
-ul {
+ul{
+    list-style-type: none;
+}
+
+.navbar ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -90,8 +95,7 @@ a:focus {
 }
 
 /* SERVICE */
-#service{
-}
+
 
 .service-card {
     width: 100%;
@@ -223,12 +227,15 @@ a:focus {
     white-space: nowrap;
 }
 
+.comment-area .group{
+    height: 50%;
+}
+
 .comment-card {
     border: 1px solid #ECECEC;
     justify-content: space-between;
     min-width: 300px;
-    width: 35rem;
-    min-height: 10rem;
+    height: 100%;
     border-radius: 1rem;
     padding: 1rem 2rem;
     margin-right: 20rem;
@@ -296,7 +303,7 @@ a:focus {
 .scaleup{
     animation: scaleup 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 20%;
+    animation-range: cover 0% cover 30%;
 }
 
 /* LOGOTIPOS DE PARCEIROS */
@@ -342,7 +349,7 @@ a:focus {
 .contactos{
     margin: 3rem 0;
     width: 100%;
-    min-height: 5rem;
+    min-height: 55rem;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -383,6 +390,12 @@ textarea{
     resize: none;
 }
 
+input:focus,
+textarea:focus{
+    animation: borderAnimated 2s linear infinite;
+    transition: all .2s ease-in-out;
+}
+
 input::placeholder,
 textarea::placeholder{
     color: #ececec41;
@@ -413,4 +426,43 @@ textarea::placeholder{
 .contacto a{
     margin: 0.5rem 0;
     font-size: 1.8rem;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #121212;
+    min-height: 40rem;
+    padding: 4rem 2rem  0 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-content{
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer .Copyrigth{
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    padding: 2rem 0 0 0;
+    width: 100%;
+}
+
+.footer-content .content-object{
+    /* padding-right: 5em; */
+    height: 100%;
+    width: 20%;
+}
+
+.footer-element{
+    margin: 1rem 0;
+    font-size: 1.7rem;
+}
+
+.line{
+    width: 80%;
+    border-color: #61616136;
 }

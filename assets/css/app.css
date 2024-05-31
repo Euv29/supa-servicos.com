@@ -204,7 +204,7 @@ a:focus {
     .contacto {
         animation: scaleup 1ms ease-in-out;
         animation-timeline: view();
-        animation-range: cover 0% cover 20%;
+        animation-range: cover 0% cover 10%;
     }
 
     .contactos .contactos-form {
@@ -250,7 +250,7 @@ a:focus {
     .contacto {
         animation: scaleup 1ms ease-in-out;
         animation-timeline: view();
-        animation-range: cover 0% cover 20%;
+        animation-range: cover 0% cover 10%;
     }
 
     .contactos .contactos-form {
@@ -428,7 +428,7 @@ a:focus {
     .contacto {
         animation: scaleup 1ms ease-in-out;
         animation-timeline: view();
-        animation-range: cover 0% cover 20%;
+        animation-range: cover 0% cover 10%;
     }
 
     .contactos .contactos-form {
@@ -484,6 +484,7 @@ a:focus {
         margin: 1rem 0;
         font-size: 2rem;
     }
+
 }
 
 /* (desktop) */
@@ -491,5 +492,9 @@ a:focus {
     .hide-desktop {
         display: none;
         overflow: hidden;
+    }
+
+    .logos:hover .slide-animete-logo{
+        animation-play-state: paused;
     }
 }

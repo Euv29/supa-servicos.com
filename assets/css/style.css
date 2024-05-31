@@ -314,10 +314,6 @@ a:focus {
     white-space: nowrap; 
 }
 
-.logos:hover .slide-animete-logo{
-    animation-play-state: paused;
-}
-
 .slide-animete-logo{
     display: inline-block;
     animation: 35s slide infinite linear;

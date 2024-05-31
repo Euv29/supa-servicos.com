@@ -37,18 +37,25 @@
             <nav class="navbar">
                 <ul class="flex-row bold">
                     <li><a class="page-scroll" href="#home">INÍCIO</a></li>
-                    <li><a class="page-scroll" href="#service">SERVIÇOS</a></li>
                     <li><a class="page-scroll" href="#sobre">SOBRE NÓS</a></li>
-                    <!-- <li><a class="page-scroll" href="#portifolio">Portfólio</a></li> -->
+                    <li><a class="page-scroll" href="#service">SERVIÇOS</a></li>
                     <li><a class="page-scroll" href="#contactos">CONTACTOS</a></li>
                 </ul>
             </nav>
         </section>
         <section class="hide-desktop">
             <ul class="navbar">
-                <li><a href="index.html" class="flex-row">
+                <li>
+                    <a href="#" class="flex-row" id="menu-icon">
                         <img height="30px" width="30px" class="icon" src="assets/img/icons/menu.webp" alt="">
-                    </a></li>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="#home">INÍCIO</a></li>
+                        <li><a class="page-scroll" href="#sobre">SOBRE NÓS</a></li>
+                        <li><a class="page-scroll" href="#service">SERVIÇOS</a></li>
+                        <li><a class="page-scroll" href="#contactos">CONTACTOS</a></li>
+                    </ul>
+                </li>
             </ul>
         </section>
     </header>
@@ -471,10 +478,10 @@
         <section id="contactos" class="flex contactos">
             <form class="flex contactos-form mobileposition">
                 <section class="container-one flex-col">
-                    <h1 class="title txt-grad ">CONTACTOS</h1>
-                    <h2 class="sub-title">
+                    <h1 class="title txt-grad ">CONTACTE CONNOSCO</h1>
+                    <!-- <h2 class="sub-title">
                         Contacte Connosco
-                    </h2>
+                    </h2> -->
                     <section class="container inputs">
                         <input class="input-form" type="text" placeholder="Nome" required>
                         <input class="input-form" type="email" placeholder="E-mail" name="" id="" required>
@@ -493,7 +500,8 @@
                                 <img width="25rem" heigth="25rem" src="assets/img/icons/IG.png" alt="" srcset="">
                             </a>
                             <a href="">
-                                <ion-icon width="40rem" heigth="40rem" class="instagram" name="logo-whatsapp"></ion-icon>
+                                <ion-icon width="40rem" heigth="40rem" class="instagram"
+                                    name="logo-whatsapp"></ion-icon>
                             </a>
                         </section>
                         <section class="contacto flex-col">
@@ -505,24 +513,6 @@
                 <section class="container container-two flex-col">
                     <textarea class="text-box" placeholder="Escreva a sua mensagem." name="" id="" required></textarea>
                     <button class="btn" type="submit">ENVIAR</button>
-
-                    <!-- Social midia and mail for mobile -->
-                    <section class=" flex-col  hide-desktop">
-                        <section class="social-midia flex-row">
-                            <a href="">
-                                <img width="25rem" heigth="25rem" src="assets/img/icons/IN.png" alt="" srcset="">
-                            </a>
-                            <a href="">
-                                <img width="25rem" heigth="25rem" src="assets/img/icons/FB.png" alt="" srcset="">
-                            </a>
-                            <a href="">
-                                <img width="25rem" heigth="25rem" src="assets/img/icons/IG.png" alt="" srcset="">
-                            </a>
-                            <a href="">
-                                <ion-icon width="40rem" heigth="40rem" class="instagram" name="logo-whatsapp"></ion-icon>
-                            </a>
-                        </section>
-                    </section>
                 </section>
             </form>
         </section>
@@ -554,7 +544,7 @@
                         <a class="footer-element" href="mailto:geral@supa-servicos.com">geral@supa-servicos.com</a>
                         <a class="footer-element" href="tel:+244999999999">+244 999 999 999</a>
                     </section>
-                    <section class="social-midia flex-row">
+                    <section class="social-midia mobile flex-row">
                         <a href="">
                             <img width="25rem" heigth="25rem" src="assets/img/icons/IN.png" alt="" srcset="">
                         </a>
@@ -630,6 +620,29 @@
         }
 
         typeText(); // Inicie a digitação
+    });
+</script>
+
+<!-- dropdow -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuIcon = document.getElementById('menu-icon');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        menuIcon.addEventListener('click', function (event) {
+            event.preventDefault();
+            if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
+                dropdownMenu.style.display = 'block';
+            } else {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!menuIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
     });
 </script>
 

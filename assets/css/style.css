@@ -419,6 +419,16 @@ textarea::placeholder{
     justify-content: space-evenly;
 }
 
+.social-midia.mobile{
+    width: 100%;
+    margin: 1rem 0;
+    align-items: start;
+    justify-content: start;
+}
+
+.social-midia.mobile a{
+    margin-right: 1.5rem
+}
 
 .social-midia a{
     margin-right: 1rem

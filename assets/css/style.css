@@ -426,6 +426,10 @@ textarea::placeholder{
     margin-right: 1.5rem
 }
 
+.social-midia.mobile a:last-child{
+    margin-left: 0.5em
+}
+
 .social-midia a{
     margin-right: 1rem
 }

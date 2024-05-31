@@ -100,7 +100,8 @@ ion-icon {
 
 /* Objects */
 .btn,
-.marcar.btn {
+.marcar.btn
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,6 +116,7 @@ ion-icon {
     animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out;
 }
+
 
 @keyframes borderAnimated {
 
@@ -246,6 +248,7 @@ a:focus {
     input,
     textarea,
     .container .btn,
+    .btn.send,
     .social-midia,
     .contacto {
         animation: scaleup 1ms ease-in-out;
@@ -476,7 +479,7 @@ a:focus {
     }
 
     .footer-content .content-object {
-        margin-top: 4rem;
+        margin-top: 1rem;
         width: 100%;
     }
 
@@ -497,4 +500,11 @@ a:focus {
     .logos:hover .slide-animete-logo{
         animation-play-state: paused;
     }
+
+}
+
+.container-two .btn{
+    cursor: pointer;
+    animation: borderAnimated 2s linear infinite;
+    transition: all .2s ease-in-out; 
 }

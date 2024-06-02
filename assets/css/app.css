@@ -15,6 +15,14 @@
 
 html {
     font-size: 60%;
+    cursor: url('/assets/img/cursor.svg'), auto;
+}
+
+html.click,
+html.click a,
+html.click a:hover,
+a:hover {
+    cursor: url('/assets/img/cursor.svg'), auto;
 }
 
 *,

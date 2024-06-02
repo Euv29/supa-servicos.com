@@ -21,7 +21,8 @@ html {
 html.click,
 html.click a,
 html.click a:hover,
-a:hover {
+a:hover,
+.btn:hover {
     cursor: url('/assets/img/cursor.svg'), auto;
 }
 

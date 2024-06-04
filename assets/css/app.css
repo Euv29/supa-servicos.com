@@ -467,6 +467,10 @@ a:focus {
         font-size: 2rem;
     }
 
+    .title{
+        margin-top: 1rem;
+    }
+
 }
 
 /* (desktop) */

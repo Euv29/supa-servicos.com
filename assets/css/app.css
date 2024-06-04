@@ -6,7 +6,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    cursor: pointer;
+    cursor: url('/assets/img/cursor.svg'), auto;
     /* background: #252525; */
     background: -webkit-linear-gradient(45deg, #2444FF, #24C4FF);
     border-radius: 5px;
@@ -121,7 +121,7 @@ ion-icon {
     border: solid 2px transparent;
     border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
     border-image-slice: 1;
-    cursor: pointer;
+    cursor: url('/assets/img/cursor.svg'), auto;
     animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out;
 }
@@ -321,42 +321,10 @@ a:focus {
     }
 
     .icon {
-        cursor: pointer;
+        cursor: url('/assets/img/cursor.svg'), auto;
     }
 
-    /* Estilo do menu dropdown */
-    .dropdown-menu {
-        display: none;
-        overflow: hidden;
-        flex-direction: column;
-        position: absolute;
-        top: 150%;
-        left: -10rem;
-        background: #00000098;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        z-index: 1;
-        width: 100rem;
-    }
 
-    .dropdown-menu li {
-        width: 100%;
-    }
-
-    .dropdown-menu li a {
-        display: block;
-        padding: 1rem 1.5rem;
-        text-decoration: none;
-        color: #ffff;
-    }
-
-    .dropdown-menu li a:hover {
-        background: var(--back-color);
-        animation: changeColor 6s linear infinite;
-        transition: all .1s ease-in-out;
-    }
 
     /*  */
     .service-card {
@@ -513,7 +481,41 @@ a:focus {
 }
 
 .container-two .btn{
-    cursor: pointer;
+    cursor: url('/assets/img/cursor.svg'), auto;
     animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out; 
+}
+
+/* Estilo do menu dropdown */
+.dropdown-menu {
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: 150%;
+    left: -10rem;
+    background: #00000098;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    width: 100rem;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--back-color);
+    animation: changeColor 6s linear infinite;
+    transition: all .1s ease-in-out;
 }

@@ -19,10 +19,10 @@ html {
 }
 
 html.click,
-html.click a,
+html.click a/*,
 html.click a:hover,
 a:hover,
-.btn:hover {
+.btn:hover*/ {
     cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
 }
 

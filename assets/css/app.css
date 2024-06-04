@@ -6,7 +6,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    cursor: url('/assets/img/cursor.svg'), auto;
+    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
     /* background: #252525; */
     background: -webkit-linear-gradient(45deg, #2444FF, #24C4FF);
     border-radius: 5px;
@@ -15,7 +15,7 @@
 
 html {
     font-size: 60%;
-    cursor: url('/assets/img/cursor.svg'), auto;
+    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
 }
 
 html.click,
@@ -23,7 +23,7 @@ html.click a,
 html.click a:hover,
 a:hover,
 .btn:hover {
-    cursor: url('/assets/img/cursor.svg'), auto;
+    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
 }
 
 *,
@@ -31,7 +31,11 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+
+    font-family: 'Univia Pro';
+    src: url('/assets/font/UniviaPro-Book.eot');
+
 }
 
 body {
@@ -121,7 +125,7 @@ ion-icon {
     border: solid 2px transparent;
     border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
     border-image-slice: 1;
-    cursor: url('/assets/img/cursor.svg'), auto;
+    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
     animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out;
 }
@@ -321,7 +325,7 @@ a:focus {
     }
 
     .icon {
-        cursor: url('/assets/img/cursor.svg'), auto;
+        cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
     }
 
 
@@ -481,7 +485,7 @@ a:focus {
 }
 
 .container-two .btn{
-    cursor: url('/assets/img/cursor.svg'), auto;
+    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
     animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out; 
 }

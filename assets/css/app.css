@@ -29,10 +29,10 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
 
-    font-family: 'Univia Pro';
-    src: url('/assets/font/UniviaPro-Book.eot');
+    /* font-family: 'Univia Pro';
+    src: url('/assets/font/UniviaPro-Book.eot'); */
 
 }
 

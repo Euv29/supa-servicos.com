@@ -173,8 +173,8 @@ a:focus {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
-/* 
-.service-img img,
+
+/*.service-img img,
 .service-img .img {
     filter: grayscale(100%);
     transition: filter 0.5s ease;

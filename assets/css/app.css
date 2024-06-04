@@ -18,11 +18,9 @@ html {
     cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
 }
 
-html.click,
-html.click a/*,
-html.click a:hover,
-a:hover,
-.btn:hover*/ {
+html.click
+
+{
     cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
 }
 
@@ -485,7 +483,6 @@ a:focus {
 }
 
 .container-two .btn{
-    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
     animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out; 
 }
@@ -522,4 +519,12 @@ a:focus {
     background: var(--back-color);
     animation: changeColor 6s linear infinite;
     transition: all .1s ease-in-out;
+}
+
+
+html.click a,
+html.click a:hover,
+a:hover,
+.btn:hover{
+    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor-pointer.svg'), auto;
 }

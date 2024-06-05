@@ -31,7 +31,7 @@ html {
     box-sizing: border-box;
 
     /* font-family: "Montserrat", sans-serif;*/
-    
+
     font-family: 'Univia Pro';
     src: url('/assets/font/UniviaPro-UltraItalic.eot');
 }
@@ -48,9 +48,12 @@ h2,
 h3,
 h4,
 p {
-    line-height: 1.5em;
     text-justify: distribute;
     text-align: justify;
+}
+
+p{
+    line-height: 1.5em;
 }
 
 h1 {
@@ -82,7 +85,6 @@ ion-icon {
 }
 
 #large-header {
-    /* background-image: url("../img/bg/bg-animation.gif"); */
     background-color: #000000;
     background-attachment: fixed;
     width: 100vw;
@@ -188,8 +190,6 @@ a:focus {
 }
 
 /*  */
-
-
 
 @keyframes changeColor {
 

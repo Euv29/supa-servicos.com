@@ -1,3 +1,5 @@
+@import url('/assets/css/app.css');
+
 :root {
     /* Cores */
     --primary: #040053;
@@ -454,7 +456,7 @@ textarea::placeholder{
 /* Trabalhos */
 .trabalho-Carroucel {
     position: relative;
-    width: 50%;
+    width: 60%;
 }
 
 .carroucel {
@@ -527,16 +529,16 @@ textarea::placeholder{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 2rem;
     justify-content: space-between;
     z-index: 1;
 }
 
 .background-container {
     position: relative;
-    width: 20rem;
-    height: 25rem;
-    margin: 1.5rem;
+    width: 30rem;
+    height: 35rem;
+    margin: 1rem;
     overflow: hidden;
     border-radius: 1rem;
     border: #2444FF solid 0.5rem;

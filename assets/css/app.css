@@ -1,3 +1,5 @@
+@import url('/assets/css/style.css');
+
 /* Scroll Style */
 ::-webkit-scrollbar {
     background-color: transparent;
@@ -6,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
+    cursor: url('/assets/img/cursor.svg'), auto;
     /* background: #252525; */
     background: -webkit-linear-gradient(45deg, #2444FF, #24C4FF);
     border-radius: 5px;
@@ -15,13 +17,11 @@
 
 html {
     font-size: 55%;
-    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
+    cursor: url('/assets/img/cursor.svg'), auto;
 }
 
-html.click
-
-{
-    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
+html.click {
+    cursor: url('/assets/img/cursor.svg'), auto;
 }
 
 *,
@@ -52,7 +52,7 @@ p {
     text-align: justify;
 }
 
-p{
+p {
     line-height: 1.5em;
 }
 
@@ -113,8 +113,7 @@ ion-icon {
 
 /* Objects */
 .btn,
-.marcar.btn
-{
+.marcar.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +124,7 @@ ion-icon {
     border: solid 2px transparent;
     border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
     border-image-slice: 1;
-    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
+    cursor: url('/assets/img/cursor.svg'), auto;
     animation: borderAnimated 2s linear infinite;
     transition: all .2s ease-in-out;
 }
@@ -323,7 +322,7 @@ a:focus {
     }
 
     .icon {
-        cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor.svg'), auto;
+        cursor: url('/assets/img/cursor.svg'), auto;
     }
 
 
@@ -467,9 +466,90 @@ a:focus {
         font-size: 2rem;
     }
 
-    .title{
+    .title {
         margin-top: 1rem;
     }
+
+    /*  */
+
+    .trabalhos {
+        padding: 2rem 0;
+        min-height: 60rem;
+    }
+
+    .trabalho-Carroucel {
+        position: relative;
+        width: 90%;
+    }
+
+    .trabalho-cards {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .trabalho-Carroucel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrousel {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .trabalho-card-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 300%;
+        margin: 0 0rem 0 2rem;
+        padding: 0;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        transition: filter 0.5s ease, transform 0.5s ease;
+        justify-content: center;
+    }
+
+    .background-container .trabalho-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .background-container .icon-area .icon {
+        transition: transform 0.5s ease;
+    }
+
+    /* Navigation buttons */
+    .navigation {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .navigation button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
 
 }
 
@@ -480,15 +560,15 @@ a:focus {
         overflow: hidden;
     }
 
-    .logos:hover .slide-animete-logo{
+    .logos:hover .slide-animete-logo {
         animation-play-state: paused;
     }
 
 }
 
-.container-two .btn{
+.container-two .btn {
     animation: borderAnimated 2s linear infinite;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
 }
 
 /* Estilo do menu dropdown */
@@ -529,6 +609,6 @@ a:focus {
 html.click a,
 html.click a:hover,
 a:hover,
-.btn:hover{
-    cursor: url('https://euv29.github.io/supa-servicos.com/assets/img/cursor-pointer.svg'), auto;
+.btn:hover {
+    cursor: url('/assets/img/cursor-pointer.svg'), auto;
 }

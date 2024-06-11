@@ -450,3 +450,204 @@ textarea::placeholder{
     width: 80%;
     border-color: #61616136;
 }
+
+/* Trabalhos */
+.trabalho-Carroucel {
+    position: relative;
+    width: 50%;
+}
+
+.carroucel {
+    display: none;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.carroucel.active {
+    display: block;
+}
+
+.trabalho-cards-first {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Navigation buttons */
+.navigation {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    width: 135%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 5rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.trabalhos {
+    padding: 2rem 0;
+    min-height: 100vh;
+}
+
+.trabalho-cards {
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.trabalho-cards-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.trabalho-cards a:hover {
+    animation: none;
+}
+
+.trabalho-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.background-container {
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    margin: 1.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: #2444FF solid 0.5rem;
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    transition: filter 1s ease;
+}
+
+.card1::before {
+    background-image: url('/assets/img/cards/25.png');
+}
+
+.card2::before {
+    background-image: url('/assets/img/cards/9.png');
+}
+
+.card3::before {
+    background-image: url('/assets/img/cards/3.png');
+}
+
+.card4::before {
+    background-image: url('/assets/img/cards/27.png');
+}
+
+.card5::before {
+    background-image: url('/assets/img/cards/1.png');
+}
+
+.card6::before {
+    background-image: url('/assets/img/cards/5.png');
+}
+
+.card7::before {
+    background-image: url('/assets/img/cards/19.png');
+}
+
+.card8::before {
+    background-image: url('/assets/img/cards/17.png');
+}
+
+.card9::before {
+    background-image: url('/assets/img/cards/13.png');
+}
+
+.card10::before {
+    background-image: url('/assets/img/cards/15.png');
+}
+
+.card11::before {
+    background-image: url('/assets/img/cards/21.png');
+}
+
+.card12::before {
+    background-image: url('/assets/img/cards/23.png');
+}
+
+.background-container:hover::before {
+    filter: grayscale(0%);
+}
+
+.background-container:hover .icon {
+    transform: rotate(45deg);
+    transition: transform 0.1s ease;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+.conteudo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0rem;
+}
+
+.conteudo p {
+    margin: 0.1rem 0;
+}
+
+.icon-area {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.icon-area p {
+    display: none;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: opacity all 0.5s ease-in-out;
+}
+
+.background-container:hover .icon-area p {
+    display: block;
+    overflow: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.icon {
+    transition: transform 0.5s ease-in-out;
+}

@@ -16,7 +16,7 @@
 }
 
 html {
-    font-size: 55%;
+    font-size: 50%;
     cursor: url('/assets/img/cursor.svg'), auto;
 }
 
@@ -38,13 +38,11 @@ html {
 
 body {
     overflow-x: hidden;
-    font-size: 1.4rem;
-    max-width: 100vw;
+    /* max-width: 100vw; */
     background-color: var(--back-color);
     color: var(--ligth-color);
 }
 
-h2,
 h3,
 h4,
 p {
@@ -65,7 +63,7 @@ h2 {
 }
 
 p {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin: 1rem 0;
 }
 
@@ -112,22 +110,7 @@ ion-icon {
 }
 
 /* Objects */
-.btn,
-.marcar.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 1rem 0.5rem;
-    background-color: #000000;
-    color: var(--ligth-color);
-    border: solid 2px transparent;
-    border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
-    border-image-slice: 1;
-    cursor: url('/assets/img/cursor.svg'), auto;
-    animation: borderAnimated 2s linear infinite;
-    transition: all .2s ease-in-out;
-}
+
 
 
 @keyframes borderAnimated {
@@ -309,6 +292,12 @@ a:focus {
         font-size: 50%;
     }
 
+    header {
+        background-color: hsla(0, 0%, 0%, 0.664);
+        box-shadow: rgba(0, 0, 0, 0.100) 0px 3px 8px;
+        color: var(--ligth-color);
+    }
+
     /*  */
     .navbar {
         list-style: none;
@@ -319,6 +308,7 @@ a:focus {
 
     .navbar li {
         position: relative;
+        font-size: 1.5rem;
     }
 
     .icon {
@@ -331,7 +321,8 @@ a:focus {
     .service-card {
         /* background-color: #2444FF; */
         width: 100%;
-        min-height: 70rem;
+        margin-top: 10rem;
+        max-height: 80rem;
         justify-content: center;
         align-items: center;
     }
@@ -393,11 +384,14 @@ a:focus {
     }
 
     /* About Us */
+    .sobre {
+        height: 75vh;
+    }
+
     .sobre p {
         width: 80%;
         margin-top: 1rem;
         text-align: center;
-        font-size: 1.7rem;
     }
 
     /* CONTACTO */
@@ -443,9 +437,34 @@ a:focus {
         font-size: 2rem;
     }
 
-    .comment-area,
     .partners {
-        margin-top: -10rem;
+        margin-top: -5rem;
+    }
+
+    .comment-card {
+        border: 1px solid #ECECEC;
+        justify-content: space-between;
+        min-width: 35rem;
+        min-height: 15rem;
+        height: 100%;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        margin-right: 20rem;
+    }
+
+    .comment-card .card-head {
+        align-items: center;
+    }
+
+    .comment-card .card-head div {
+        margin-right: 1rem;
+    }
+
+    .comment-card .card-body p {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-right: 1rem;
+        padding: 0 0 0 2rem;
     }
 
     /* Footer */
@@ -474,7 +493,7 @@ a:focus {
 
     .trabalhos {
         padding: 2rem 0;
-        min-height: 60rem;
+        min-height: 65rem;
     }
 
     .trabalho-Carroucel {
@@ -486,6 +505,17 @@ a:focus {
         position: relative;
         width: 100%;
         overflow: hidden;
+    }
+
+    .background-container {
+        position: relative;
+        width: 35rem;
+        height: 40rem;
+        margin: 0;
+        margin-left: -1.5rem;
+        overflow: hidden;
+        border-radius: 1rem;
+        border: #2444FF solid 0.5rem;
     }
 
     .trabalho-Carroucel {
@@ -504,7 +534,7 @@ a:focus {
         display: flex;
         transition: transform 0.5s ease-in-out;
         width: 300%;
-        margin: 0 0rem 0 2rem;
+        margin: 0 0 0 14%;
         padding: 0;
     }
 
@@ -550,6 +580,46 @@ a:focus {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
+    .conteudo h1 {
+        /* font-size: 2.5rem; */
+        margin-bottom: 0rem;
+    }
+
+    .conteudo p {
+        margin: 0.1rem 0;
+        font-size: 2.5rem;
+
+    }
+
+    .icon-area p {
+        display: none;
+        overflow: hidden;
+        font-size: 2rem;
+        font-weight: bold;
+        transition: opacity all 0.5s ease-in-out;
+    }
+
+    h2,
+    .sub-title {
+        text-justify: none;
+        text-align: none;
+    }
+
+    .Container {
+        padding: 15rem 1%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team-card {
+        min-height: 35rem;
+        width: 25rem;
+        margin: 1rem
+    }
 
 }
 
@@ -560,16 +630,33 @@ a:focus {
         overflow: hidden;
     }
 
-    .logos:hover .slide-animete-logo {
+    /* .logos:hover .slide-animete-logo {
         animation-play-state: paused;
+    } */
+
+    .background-container {
+        position: relative;
+        width: 30rem;
+        height: 35rem;
+        margin: 2rem;
+        overflow: hidden;
+        border-radius: 1rem;
+        border: #2444FF solid 0.5rem;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .trabalho-card-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 300%;
+        padding: 0;
     }
 
+
 }
 
-.container-two .btn {
-    animation: borderAnimated 2s linear infinite;
-    transition: all .2s ease-in-out;
-}
+
 
 /* Estilo do menu dropdown */
 .dropdown-menu {
@@ -605,10 +692,304 @@ a:focus {
     transition: all .1s ease-in-out;
 }
 
-        
+/* (desktop) */
+@media screen and (min-width: 2560px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    .icon {
+        cursor: url('/assets/img/cursor.svg'), auto;
+    }
+
+
+
+    /*  */
+    .service-card {
+        /* background-color: #2444FF; */
+        width: 100%;
+        padding: 0 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-img {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .service-img img {
+        width: 25rem;
+        height: 25rem;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-desc {
+        padding: 2rem 1rem 0 1rem;
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .service-desc h1 {
+        margin-top: 12rem;
+    }
+
+    /* .service-desc p,
+    .service-desc h2, */
+    .service-desc a {
+        animation: scaleup 1ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 40%;
+    }
+
+    .amimatedRigth {
+        animation: none;
+        animation-timeline: view();
+        animation-range: cover 0% cover 0%;
+    }
+
+    .amimatedleft {
+        animation: none;
+        animation-timeline: view();
+        animation-range: cover 0% cover 0%;
+    }
+
+    /* About Us */
+    .sobre {
+        margin: 0;
+        height: 10vh;
+        padding: 0;
+    }
+
+    .sobre p {
+        width: 80%;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    /* CONTACTO */
+
+    input,
+    textarea,
+    .container .btn,
+    .social-midia,
+    .contacto {
+        animation: scaleup 1ms ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 10%;
+    }
+
+    .contactos .contactos-form {
+        width: 50%;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    /* .comment-area,
+    .partners {
+        margin-top: -5rem;
+    } */
+
+    /* Footer */
+    .footer,
+    .footer-content,
+    .content-object {
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .footer-content .content-object {
+        margin-top: 1.5rem;
+    }
+
+    .footer-element {
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .title {
+        margin-top: 1rem;
+    }
+
+    /*  */
+
+    .trabalhos {
+        padding: 2rem 0;
+    }
+
+    .trabalho-Carroucel {
+        position: relative;
+        width: 40%;
+    }
+
+    .trabalho-cards {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .background-container {
+        position: relative;
+        width: 35rem;
+        height: 40rem;
+        overflow: hidden;
+        border-radius: 1rem;
+        border: #2444FF solid 0.5rem;
+    }
+
+    .trabalho-Carroucel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrousel {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .trabalho-card-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 300%;
+        /* margin: 0 0rem 0 15%; */
+        padding: 0;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        transition: filter 0.5s ease, transform 0.5s ease;
+        justify-content: center;
+    }
+
+    .background-container .trabalho-card {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+
+    .background-container .icon-area .icon {
+        transition: transform 0.5s ease;
+    }
+
+    /* Navigation buttons */
+    .navigation {
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        width: 120%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .navigation button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 2.5rem;
+        padding: 2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .conteudo h1 {
+        /* font-size: 2.5rem; */
+        margin-bottom: 0rem;
+    }
+
+    .conteudo p {
+        margin: 0.1rem 0;
+        font-size: 2.5rem;
+
+    }
+
+    .icon-area p {
+        display: none;
+        overflow: hidden;
+        font-size: 2rem;
+        font-weight: bold;
+        transition: opacity all 0.5s ease-in-out;
+    }
+
+    .container-two .btn {
+        animation: borderAnimated 2s linear infinite;
+        transition: all .2s ease-in-out;
+    }
+
+    .btn,
+    .marcar.btn {
+        color: var(--ligth-color);
+        border: solid 2px transparent;
+        border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
+        border-image-slice: 1;
+        cursor: url('/assets/img/cursor.svg'), auto;
+        animation: borderAnimated 2s linear infinite;
+    }
+
+    .container-two .btn {
+        animation: borderAnimated 2s linear infinite;
+        transition: all .2s ease-in-out;
+    }
+}
+
+
 html.click a,
 html.click a:hover,
 a:hover,
 .btn:hover {
     cursor: url('/assets/img/cursor-pointer.svg'), auto;
+}
+
+.container-two .btn {
+    animation: borderAnimated 2s linear infinite;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    border-image: linear-gradient(90deg, #fff, #fff, #fff);
+    background-color: #2444FF;
+    box-shadow: #24C4FF 0px 0px 15px;
+    animation: none;
+    border-image-slice: 1;
+}
+
+.btn,
+.marcar.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    background-color: #000000;
+    color: var(--ligth-color);
+    border: solid 2px transparent;
+    border-image: linear-gradient(90deg, var(--primary), var(--blue), var(--blue-ligth));
+    border-image-slice: 1;
+    cursor: url('/assets/img/cursor.svg'), auto;
+    animation: borderAnimated 2s linear infinite;
+    transition: all .2s ease-in-out;
+}
+
+#borderAnimated{
+    animation: borderAnimated 2s linear infinite;
 }
